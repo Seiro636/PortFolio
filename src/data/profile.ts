@@ -1,36 +1,60 @@
 export const profile = {
-  name: "John Doe",
-  title: "Développeur Full Stack",
-  subtitle: "React & Node.js",
-  description: "Développeur passionné avec plus de 5 ans d'expérience dans la création d'applications web modernes et performantes. Expert en React, Node.js et architectures cloud.",
-  image: "/images/profile.jpg",
+  name: "Kenzo Gallon",
+  age: 19,
+  location: "Nantes",
+  email: "kenzobelaouini@outlook.fr",
+  phone: "06 35 13 73 80",
+  education: [
+    {
+      degree: "BUT Informatique",
+      school: "IUT de Nantes",
+      period: "2023 - Présent",
+      details: "2ème année"
+    },
+    {
+      degree: "BAC STI2D",
+      school: "Spécialité informatique",
+      period: "2022",
+      details: "Mention assez bien"
+    }
+  ],
   skills: {
-    frontend: [
-      { name: "React", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "Next.js", level: 85 },
-      { name: "Tailwind CSS", level: 80 },
-    ],
-    backend: [
-      { name: "Node.js", level: 85 },
-      { name: "NestJS", level: 80 },
-      { name: "PostgreSQL", level: 75 },
-      { name: "REST API", level: 90 },
-    ],
-    tools: [
-      { name: "Git", level: 85 },
-      { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
-      { name: "CI/CD", level: 75 },
-    ],
+    backend: ["PHP (8.4.1)", "Node.js avec Express", "Go"],
+    frontend: ["React.js", "Next.js"],
+    database: ["PostgreSQL"],
+    frameworks: ["NestJS"],
+    tools: ["WebStorm (IDE)"],
+    other: [
+      "Gestion des micro-services",
+      "API RESTful",
+      "Développement de plugins Minecraft"
+    ]
   },
-  social: {
-    github: "https://github.com/johndoe",
-    linkedin: "https://linkedin.com/in/johndoe",
-    twitter: "https://twitter.com/johndoe",
-  },
-  contact: {
-    email: "contact@johndoe.dev",
-    phone: "+33 6 12 34 56 78",
-  },
-} 
+  languages: [
+    { name: "Français", level: "Langue maternelle" },
+    { name: "Anglais", level: "B1" },
+    { name: "Espagnol", level: "A2" },
+    { name: "Coréen", level: "En apprentissage" }
+  ],
+  interests: [
+    "BMX Race",
+    "Culture japonaise"
+  ],
+  experience: [
+    {
+      company: "McDonald's",
+      position: "Équipier polyvalent en restauration rapide",
+      period: "Mai 2024, Février à Août 2022"
+    },
+    {
+      company: "CJS L'Ouvre Boîte 44",
+      position: "Entretien de jardin",
+      period: "Été 2021"
+    },
+    {
+      company: "Particuliers",
+      position: "Ménage",
+      period: "2020 - 2021"
+    }
+  ]
+}; 

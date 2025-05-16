@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --background: #0f172a;
+  --foreground: #f8fafc;
+}
+
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .heading {
+    @apply text-4xl font-bold mb-12 text-center;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+    @apply bg-primary text-white hover:bg-primary-dark;
+    @apply dark:bg-primary dark:text-white dark:hover:bg-primary-dark;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+    @apply dark:bg-primary dark:text-white dark:hover:bg-primary-dark;
+  }
+
+  .isometric-card, .card, .bg-card {
+    @apply bg-gray-100 text-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+    @apply dark:bg-gray-800 dark:text-white;
+  }
+
+  .isometric-text {
+    @apply text-gray-900 dark:text-foreground;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.03);
+  }
+} 
